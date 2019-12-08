@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "1045852030618",
+    "firebase_url": "https://my-project-one-bae2e.firebaseio.com",
+    "project_id": "my-project-one-bae2e",
+    "storage_bucket": "my-project-one-bae2e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1045852030618:android:e9d81b25c4f6ee8d",
+        "android_client_info": {
+          "package_name": "com.example.rumi.tourassistant"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1045852030618-n1uam39649tmdfvn4a34je9qtuthum0m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA1cwdQWpqDioO0PlQTWK60wLL9zMvVAgE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

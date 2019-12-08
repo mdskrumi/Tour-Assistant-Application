@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginBottom="5dp"
+    android:background="#333333">
+
+    <TextView
+        android:id="@+id/expenditureItemNameForListRow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Expenditure Item Name"
+        android:textColor="@android:color/background_light"
+        android:textSize="18sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop = "5dp"
+        android:layout_alignParentTop="true"
+        />
+    <TextView
+        android:id="@+id/expenditureItemTypeForListRow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="Type"
+        android:textColor="@android:color/background_light"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp"
+        />
+
+    <LinearLayout
+        android:id="@+id/ll2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/expenditureItemNameForListRow"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop = "5dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/background_light"
+            android:text="Cost : "
+            />
+        <TextView
+            android:id="@+id/expenditureItemCostForListRow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5000"
+            android:textColor="@android:color/background_light"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/ll2"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop = "5dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/background_light"
+            android:text="Quantity : "
+            />
+        <TextView
+            android:id="@+id/expenditureItemQuantityForListRow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10"
+            android:textColor="@android:color/background_light"
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/ll2"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop = "5dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentRight="true"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/background_light"
+            android:text="Net Cost : "
+            />
+        <TextView
+            android:id="@+id/expenditureItemNetCostForListRow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10"
+            android:textColor="@android:color/background_light"
+            />
+    </LinearLayout>
+
+
+</RelativeLayout>

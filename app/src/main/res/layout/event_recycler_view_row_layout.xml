@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginBottom="5dp"
+    android:background="#333333"
+    >
+
+    <TextView
+        android:id="@+id/eventNameForListRow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="My Event Name"
+        android:textColor="@android:color/background_light"
+        android:textSize="20sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop = "5dp"
+        android:layout_alignParentTop="true"
+        />
+
+    <TextView
+        android:id="@+id/eventStatusForListRow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="Status"
+        android:textColor="@android:color/background_light"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp"
+        />
+
+
+    <LinearLayout
+        android:id="@+id/lll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/eventNameForListRow"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop = "5dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/background_light"
+            android:text="Destination : "
+            />
+        <TextView
+            android:id="@+id/eventdestinationForListRow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="My destination"
+            android:textColor="@android:color/background_light"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/lll"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop = "5dp"
+        android:layout_marginBottom="10dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/background_light"
+            android:text="From   : "
+            />
+        <TextView
+            android:id="@+id/eventStartingDateForListRow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Starting date"
+            android:textColor="@android:color/background_light"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/lll"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop = "5dp"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/background_light"
+            android:text="To   : "
+            />
+        <TextView
+            android:id="@+id/eventEndingDateForListRow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ending date"
+            android:textColor="@android:color/background_light"
+            />
+    </LinearLayout>
+
+
+</RelativeLayout>

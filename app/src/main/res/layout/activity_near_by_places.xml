@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NearByPlacesActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="15dp"
+        >
+
+        <TextView
+            android:text="Select Maximum Range (Meter)"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"/>
+        <Spinner
+            android:id="@+id/nearByRangeSpn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:entries="@array/nearByRangeList"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            >
+        </Spinner>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_margin="15dp"
+                    >
+                    <Button
+                        android:id="@+id/nearByHotelButton"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="140dp"
+                        android:background="@drawable/cafe"
+                        android:gravity="bottom"
+                        android:textAlignment="center"
+                        />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight=".25"
+                        android:layout_height="wrap_content" />
+
+                    <Button
+                        android:id="@+id/nearByrestaurantButton"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="140dp"
+                        android:background="@drawable/res"
+                        android:gravity="bottom"
+                        android:textAlignment="center"
+                        />
+
+                </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_margin="15dp"
+                    >
+                    <Button
+                        android:id="@+id/nearByBankButton"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="140dp"
+                        android:background="@drawable/bank"
+                        android:gravity="bottom"
+                        android:textAlignment="center"
+                        />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight=".25"
+                        android:layout_height="wrap_content" />
+
+                    <Button
+                        android:id="@+id/nearByAtmButton"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="140dp"
+                        android:background="@drawable/atm"
+                        android:gravity="bottom"
+                        android:textAlignment="center"
+                        />
+
+                </LinearLayout>
+
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_margin="15dp"
+            >
+            <Button
+                android:id="@+id/nearBymallButton"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="140dp"
+                android:background="@drawable/mall"
+                android:gravity="bottom"
+                android:textAlignment="center"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight=".25"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/nearBytaxiButton"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="140dp"
+                android:background="@drawable/taxi"
+                android:gravity="bottom"
+                android:textAlignment="center"
+                />
+
+        </LinearLayout>
+
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_margin="15dp"
+            >
+            <Button
+                android:id="@+id/nearByBusButton"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="140dp"
+                android:background="@drawable/bus"
+                android:gravity="bottom"
+                android:textAlignment="center"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight=".25"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/nearBytrainButton"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="140dp"
+                android:background="@drawable/train"
+                android:gravity="bottom"
+                android:textAlignment="center"
+                />
+
+        </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_margin="15dp"
+                    >
+                    <Button
+                        android:id="@+id/nearByPoliceButton"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="140dp"
+                        android:background="@drawable/police"
+                        android:gravity="bottom"
+                        android:textAlignment="center"
+                        />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight=".25"
+                        android:layout_height="wrap_content" />
+
+                    <Button
+                        android:id="@+id/nearByHospitalButton"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="140dp"
+                        android:background="@drawable/hospital"
+                        android:gravity="bottom"
+                        android:textAlignment="center"
+                        />
+
+                </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

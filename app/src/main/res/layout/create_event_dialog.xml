@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#333333">
+
+    <TextView
+        android:id="@+id/titleofdialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Create a New Event"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:textColor="#FFFFFF"
+        />
+
+    <EditText
+        android:id="@+id/eventNameinDialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:hint="Event Name"
+        android:textColor="@android:color/background_light"
+        android:textColorHint="#96ffffff"
+        android:layout_below="@id/titleofdialog"
+        />
+    <EditText
+        android:id="@+id/eventdestinationNameinDialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="2dp"
+        android:gravity="center"
+        android:hint="Destination"
+        android:textColor="@android:color/background_light"
+        android:textColorHint="#96ffffff"
+        android:layout_below="@+id/eventNameinDialog"/>
+    <EditText
+        android:id="@+id/eventBudgetinDialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:gravity="center"
+        android:hint="Budget"
+        android:textColor="@android:color/background_light"
+        android:textColorHint="#96ffffff"
+        android:layout_below="@+id/eventdestinationNameinDialog"/>
+
+
+    <LinearLayout
+        android:id="@+id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/eventBudgetinDialog"
+        android:background="#333333"
+        android:layout_marginTop="5dp"
+
+        >
+        <Button
+            android:id="@+id/showStartingDatePickerButtoninDialog"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="#333333"
+            android:textColor="#96ffffff"
+            android:text="Set Starting Date"
+            android:textAllCaps="false"
+            android:textSize="17sp"
+
+            />
+        <TextView
+            android:id="@+id/selectedStartingDateByDatePickerinDialog"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/background_light"
+            android:layout_marginTop="2dp"
+            android:textSize="17sp"
+            android:text=""
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/layout1"
+        android:background="#333333"
+        android:layout_marginTop="5dp"
+
+        >
+        <Button
+            android:id="@+id/showEndingDatePickerButtoninDialog"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="#333333"
+            android:textColor="#96ffffff"
+            android:text="Set Ending Date"
+            android:textAllCaps="false"
+            android:textSize="17sp"
+
+            />
+        <TextView
+            android:id="@+id/selectedEndingDateByDatePickerinDialog"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/background_light"
+            android:layout_marginTop="2dp"
+            android:textSize="17sp"
+            android:text=""
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/layout2"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentRight="true"
+        >
+
+        <Button
+            android:id="@+id/cancleCreatingButton"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="Cancel"
+            android:background="#333333"
+            android:textAllCaps="false"
+            android:layout_alignParentRight="true"
+            />
+        <Button
+            android:id="@+id/createEventButtoninDialog"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="Create"
+            android:textAllCaps="false"
+            android:background="#333333"
+            android:layout_alignParentRight="true"
+            />
+    </LinearLayout>
+</RelativeLayout>

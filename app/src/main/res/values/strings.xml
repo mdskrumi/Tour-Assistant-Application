@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">Tour Assistant</string>
+    <string name="empty_field_error_msg">This Field is Required</string>
+
+    <string-array name="expenditure_types">
+        <item>All</item>
+        <item>Transportation</item>
+        <item>Food</item>
+        <item>Medicine</item>
+        <item>Living</item>
+        <item>Shopping</item>
+        <item>Others</item>
+    </string-array>
+
+    <string-array name="expenditure_types_2">
+        <item>Transportation</item>
+        <item>Food</item>
+        <item>Medicine</item>
+        <item>Living</item>
+        <item>Shopping</item>
+        <item>Others</item>
+    </string-array>
+
+
+    <string-array name="nearByRangeList">
+        <item>250</item>
+        <item>500</item>
+        <item>750</item>
+        <item>1000</item>
+        <item>1250</item>
+        <item>1500</item>
+        <item>1750</item>
+        <item>2000</item>
+        <item>2250</item>
+        <item>2500</item>
+        <item>2750</item>
+        <item>3000</item>
+    </string-array>
+
+
+    <string name="WEATHER_API">80b24926b914740726365bd4a1b57eaf</string>
+    <string name="near_by_api">AIzaSyCXF0owlwQ_q6o1n297oIR5dXN8mWxnXO8</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_maps">Map</string>
+</resources>

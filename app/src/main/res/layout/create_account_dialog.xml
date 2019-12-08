@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#333333">
+
+    <TextView
+        android:id="@+id/titleofdialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Create Account"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:textColor="#FFFFFF"
+        />
+
+    <EditText
+        android:id="@+id/newUserEmailEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:hint="Email Address"
+        android:textColor="@android:color/background_light"
+        android:textColorHint="#96ffffff"
+        android:layout_below="@id/titleofdialog"
+        />
+    <EditText
+        android:id="@+id/newUserPasswordEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="2dp"
+        android:gravity="center"
+        android:hint="Password"
+        android:textColor="@android:color/background_light"
+        android:textColorHint="#96ffffff"
+        android:layout_below="@+id/newUserEmailEditText"/>
+    <EditText
+        android:id="@+id/newUserComfirmPasswordEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="2dp"
+        android:gravity="center"
+        android:hint="Confirm Password"
+        android:textColor="@android:color/background_light"
+        android:textColorHint="#96ffffff"
+        android:layout_below="@+id/newUserPasswordEditText"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/newUserComfirmPasswordEditText"
+        android:layout_alignParentRight="true"
+        >
+            <Button
+                android:id="@+id/cancleButton"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF"
+                android:text="Cancel"
+                android:background="#333333"
+                android:textAllCaps="false"
+                android:layout_alignParentRight="true"
+                />
+            <Button
+                android:id="@+id/signupButton"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF"
+                android:text="Sign up"
+                android:textAllCaps="false"
+                android:background="#333333"
+                android:layout_alignParentRight="true"
+                />
+    </LinearLayout>
+</RelativeLayout>

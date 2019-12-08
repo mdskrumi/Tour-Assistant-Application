@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#333333"
+    tools:context=".EventDetailViewActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/detailEventNameTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="Event Name"
+                android:textColor="@android:color/white"
+                android:textSize="25sp"
+                android:layout_marginTop="15dp"
+                />
+            <TextView
+                android:id="@+id/detailbudgetStatusTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Budget Status"
+                android:textColor="@android:color/white"
+                android:layout_below="@+id/detailEventNameTextView"
+                android:gravity="center"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="5dp"
+                />
+            <TextView
+                android:id="@+id/detailbudgetStatusInNumberTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="(?/?)"
+                android:textColor="@android:color/white"
+                android:layout_below="@+id/detailbudgetStatusTextView"
+                android:gravity="center"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="5dp"
+                />
+
+            <ProgressBar
+                android:id="@+id/determinateBar"
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/detailbudgetStatusInNumberTextView"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                />
+            <Button
+                android:id="@+id/detailEventAddBudgetButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/determinateBar"
+                android:text="Add Budget"
+                android:layout_marginTop="60dp"
+                android:textAllCaps="false"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                />
+
+            <Button
+                android:id="@+id/detailEventExpenditureButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/detailEventAddBudgetButton"
+                android:text="Expenditures"
+                android:layout_marginTop="15dp"
+                android:textAllCaps="false"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                />
+            <Button
+                android:id="@+id/detailEventNoteButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Notes"
+                android:layout_below="@id/detailEventExpenditureButton"
+                android:layout_marginTop="15dp"
+                android:textAllCaps="false"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                />
+            <Button
+                android:id="@+id/detailEventButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Event"
+                android:layout_below="@id/detailEventNoteButton"
+                android:textAllCaps="false"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                />
+            <Button
+                android:id="@+id/detailCapturePhotoButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Capture Photo"
+                android:layout_below="@id/detailEventButton"
+                android:textAllCaps="false"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="50dp"
+                />
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+
+
+
+</ScrollView>
